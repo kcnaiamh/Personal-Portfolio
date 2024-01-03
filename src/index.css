@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@layer base {
+	* {
+		font-family: "Poppins", sans-serif;
+	}
+}
+
 @layer components {
 	.sidebar-icon {
 		@apply relative flex items-center justify-center h-16 w-16 mt-3 mb-3 mx-auto bg-gray-800 text-white  hover:bg-blue-700 rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear;
@@ -9,5 +17,29 @@
 
 	.sidebar-tooltip {
 		@apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
+	}
+
+	.sidebar-hight {
+		max-height: 26rem;
+	}
+
+	.group-date {
+		@apply text-4xl text-gray-400 px-3 py-4 font-bold tracking-widest bg-black shadow-black shadow-xl;
+	}
+
+	.timeline {
+		@apply relative border-l-4 border-gray-200 ml-3 mt-3 py-16 space-y-14;
+	}
+
+	.dot {
+		@apply absolute top-[30px] -left-3.5 bg-blue-400 h-6 w-6 rounded-full border-4 border-black;
+	}
+
+	.timeline-date {
+		@apply text-xs font-bold opacity-40 tracking-widest;
+	}
+
+	.timeline-title {
+		@apply text-3xl text-gray-600 font-semibold tracking-wide mb-2;
 	}
 }

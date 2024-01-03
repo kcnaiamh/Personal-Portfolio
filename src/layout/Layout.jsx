@@ -1,15 +1,19 @@
 import React from "react";
 import SideBar from "../components/SideBar";
-import TopProfile from "../components/TopProfile";
+import Header from "../components/Header";
+import { Toaster } from "react-hot-toast";
 
 const Layout = (props) => {
 	return (
-		<div className="flex-col">
-			<TopProfile />
-			<div className="flex absolute top-1/2 -translate-y-1/2 left-1/4 space-x-11 max-h-96">
+		<div className="flex-col mt-20">
+			<Header />
+			<div className="flex space-x-11 mx-56 px-56">
 				<SideBar />
-				<div className="max-w-screen-md bg-orange-500">{props.children}</div>
+				<div className=" bg-black text-white rounded-lg shadow-lg shadow-slate-700 w-full px-6 py-6 mb-12">
+					{props.children}
+				</div>
 			</div>
+			<Toaster position="bottom-right" reverseOrder={false} />
 		</div>
 	);
 };

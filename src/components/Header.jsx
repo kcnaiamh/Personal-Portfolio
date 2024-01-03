@@ -1,9 +1,17 @@
 import React from "react";
 
-const TopProfile = () => {
+const Header = () => {
 	return (
-		<header>
-			<div className="flex bg-gray-700 text-white rounded-xl pt-5 pb-5 absolute top-20  left-1/4 right-1/4 shadow-slate-700 shadow-lg">
+		<header className="mx-56 px-56 relative">
+			<div className="flex absolute ml-8 -mt-14 hover:scale-110 transition-all duration-300">
+				<img
+					src="/src/assets/me.jpeg"
+					alt="Profile Photo"
+					className="max-h-40 max-w-40 rounded-full ring-8 ring-gray-700"
+				/>
+			</div>
+
+			<div className="flex bg-gray-700 text-white rounded-xl py-5  mb-14  shadow-slate-700 shadow-lg">
 				<div className="flex flex-1">
 					<div className="mr-10 ml-60">
 						<p className="text-white text-xl">
@@ -45,16 +53,8 @@ const TopProfile = () => {
 					</div>
 				</div>
 			</div>
-
-			<div className="flex absolute top-5 pl-5 left-1/4 right-1/4 ">
-				<img
-					src="/src/assets/me.jpeg"
-					alt="Profile Photo"
-					className="max-h-40 max-w-40 rounded-full ring-8 ring-gray-700"
-				/>
-			</div>
 		</header>
 	);
 };
 
-export default TopProfile;
+export default Header;

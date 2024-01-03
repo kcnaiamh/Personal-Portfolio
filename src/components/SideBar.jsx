@@ -18,7 +18,7 @@ const SideBar = () => {
 	};
 
 	return (
-		<aside className="w-30 m-0 flex flex-col bg-gray-900 text-white rounded-xl px-3 py-3 shadow-slate-700 shadow-lg ">
+		<aside className="w-30 m-0 flex-col bg-gray-900 text-white rounded-xl px-3 py-3 shadow-slate-700 shadow-lg sidebar-hight sticky top-3">
 			<SideBarIcon icon={<IoPersonSharp size="30" />} tip="about" epoint="/" />
 			<SideBarIcon
 				icon={<IoDocumentText size="30" />}

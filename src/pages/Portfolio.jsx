@@ -1,19 +1,21 @@
 import React, { useEffect, useRef, useState } from "react";
 import Layout from "../layout/Layout";
 import getCerts from "../APIRequest/APIRequest";
+import PortfolioCards from "../components/PortfolioCards";
 
 const PortfolioPage = () => {
-	const [certs, setCerts] = useState([]);
+	const [dbInfo, setDBInfo] = useState([]);
 
 	const [cardIndex, setCardIndex] = useState(0);
 	const [showModal, setShowModal] = useState(false);
+	const [activeBtn, setActiveBtn] = useState("certBtn");
 
 	const modalRef = useRef();
 
 	useEffect(() => {
 		(async () => {
 			let res = await getCerts();
-			setCerts(res);
+			setDBInfo(res);
 		})();
 	}, []);
 
@@ -32,31 +34,43 @@ const PortfolioPage = () => {
 					}}
 					className="fixed z-10 inset-0 bg-black bg-opacity-80 backdrop-blur-md flex justify-center items-center">
 					<div className="max-w-md">
-						<img src={certs[cardIndex].image_path} alt="" />
+						<img src={dbInfo["certs"][cardIndex].image_path} alt="" />
 						<div>
-							<p>{certs[cardIndex].name}</p>
-							<p>{certs[cardIndex].description}</p>
+							<p>{dbInfo["certs"][cardIndex].name}</p>
+							<p>{dbInfo["certs"][cardIndex].description}</p>
 						</div>
 					</div>
 				</div>
 			)}
 
-			<div className="flex grid-rows-3">
-				{certs &&
-					certs.map((item, index) => {
-						return (
-							<figure
-								className="group flex-1 m-3 relative hover:scale-105 duration-200"
-								onClick={() => handleOpenModal(index)}>
-								<img src={item["image_path"]} alt="" />
+			<div>
+				<nav className="space-x-4">
+					{/* prettier-ignore */}
+					<button onClick={() => setActiveBtn("certBtn")}>Certifications</button>
+					<button onClick={() => setActiveBtn("projectBtn")}>Projects</button>
+					<button onClick={() => setActiveBtn("badgeBtn")}>Badges</button>
+				</nav>
 
-								<div className=" absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 overflow-hidden w-full  transition-all duration-500 ease-in-out h-0 group-hover:h-1/2">
-									<p>{item["name"]}</p>
-									<p>{item["description"]}</p>
-								</div>
-							</figure>
-						);
-					})}
+				{activeBtn === "certBtn" && (
+					<PortfolioCards
+						info={dbInfo["certs"]}
+						handleOpenModal={handleOpenModal}
+					/>
+				)}
+
+				{activeBtn === "projectBtn" && (
+					<PortfolioCards
+						info={dbInfo["projects"]}
+						handleOpenModal={handleOpenModal}
+					/>
+				)}
+
+				{activeBtn === "badgeBtn" && (
+					<PortfolioCards
+						info={dbInfo["badges"]}
+						handleOpenModal={handleOpenModal}
+					/>
+				)}
 			</div>
 		</Layout>
 	);

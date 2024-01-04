@@ -1,9 +1,9 @@
 import React from "react";
 import { IoPersonSharp, IoDocumentText } from "react-icons/io5";
 import { GrCodeSandbox } from "react-icons/gr";
-import { GiSpellBook } from "react-icons/gi";
 import { MdContactPhone } from "react-icons/md";
 import { NavLink } from "react-router-dom";
+import { GiHiking } from "react-icons/gi";
 
 const SideBar = () => {
 	const SideBarIcon = ({ icon, tip, epoint }) => {
@@ -30,7 +30,11 @@ const SideBar = () => {
 				tip="portfolio"
 				epoint="/portfolio"
 			/>
-			<SideBarIcon icon={<GiSpellBook size="30" />} tip="blog" epoint="/blog" />
+			<SideBarIcon
+				icon={<GiHiking size="30" />}
+				tip="my journey"
+				epoint="/journey"
+			/>
 			<SideBarIcon
 				icon={<MdContactPhone size="30" />}
 				tip="contact"

@@ -2,14 +2,182 @@
         {
             "name": "Certified AppSec Practitioner",
             "image_path": "/src/assets/cert_CertifiedAppSecPractitioner.jpg",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+            "description": ""
+        },
+        {
+            "name": "AWS Cloud Technical Essentials",
+            "image_path": "/src/assets/cert_Coursera_AWSCloudTechnicalEssentials.jpeg",
+            "description": ""
+        },
+        {
+            "name": "Cloud Security Basics",
+            "image_path": "/src/assets/cert_Coursera_CloudSecurityBasics.jpeg",
+            "description": ""
+        },
+        {
+            "name": "Professional Cyber Security - Career Focused Advanced Training",
+            "image_path": "/src/assets/cert_Devskill_ProfessionalCyberSecurity.jpeg",
+            "description": ""
+        },
+        {
+            "name": "Fortinet Network Security Associate 1",
+            "image_path": "/src/assets/cert_Fortinet_NSE1.jpg",
+            "description": ""
+        },
+        {
+            "name": "Fortinet Network Security Associate 2",
+            "image_path": "/src/assets/cert_Fortinet_NSE2.jpg",
+            "description": ""
+        },
+        {
+            "name": "Intermediate Machine Learning",
+            "image_path": "/src/assets/cert_Kaggle_IntermediateML.jpeg",
+            "description": ""
+        },
+        {
+            "name": "Pandas",
+            "image_path": "/src/assets/cert_Kaggle_Pandas.jpeg",
+            "description": ""
+        },
+        {
+            "name": "Intro To Machine Learning",
+            "image_path": "/src/assets/cert_Kaggle_IntroToML.jpeg",
+            "description": ""
+        },
+        {
+            "name": "Splunk Infrastructure Overview",
+            "image_path": "/src/assets/cert_Splunk_SplunkInfrastructureOverview.jpg",
+            "description": ""
+        },
+        {
+            "name": "Splunk User Behavior Analytics",
+            "image_path": "/src/assets/cert_Splunk_SplunkUBA.jpg",
+            "description": ""
+        },
+        {
+            "name": "Practical Malware Analysis & Triage",
+            "image_path": "/src/assets/cert_TCM_PMAT.jpg",
+            "description": ""
+        },
+        {
+            "name": "AWS for SAA",
+            "image_path": "/src/assets/cert_Tecognize_AWS.jpg",
+            "description": ""
+        },
+        {
+            "name": "Pre Security Learning Path",
+            "image_path": "/src/assets/cert_THM_PreSecurityLearningPath.jpeg",
+            "description": ""
+        },
+        {
+            "name": "Fundamentals of Networking Engineering",
+            "image_path": "/src/assets/cert_Udemy_FundamentalsOfNetworkingEngineering.jpeg",
+            "description": ""
+        },
+        {
+            "name": "The SQL Programming Essentials 2021 Immersive Training",
+            "image_path": "/src/assets/cert_Udemy_SQLProgrammingEssentials.jpeg",
+            "description": ""
+        },
+        {
+            "name": "Getting Started With Wireshark: The Ultimate Hands-on Course",
+            "image_path": "/src/assets/cert_Udemy_Wireshark.jpeg",
+            "description": ""
         },
         {
             "name": "Problem Solving (Intermediate)",
             "image_path": "/src/assets/cert_HackerRank_IntermediateProblemSolving.jpg",
-            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. "
+            "description": ""
         }
     ],
-    "projects": [{}],
-    "badges": [{}]
+    "projects": [
+        {
+            "name": "How to create VPC in AWS and connect EC2 instance to the internet from public and private subnet",
+            "image_path": "/src/assets/project_AWS.png",
+            "description": "",
+            "video": "https://youtu.be/AkMtgD4pkxs"
+        },
+        {
+            "name": "SIEM Home Lab",
+            "image_path": "/src/assets/project_ELK.png",
+            "description": "Built a SIEM Home Lab, utilizing the ELK Stack for log analysis and monitoring. The core of this setup is a Debian 12 server serving as the central ELK hub, while a Windows 10 machine acts as the agent.",
+            "video": "https://youtu.be/MbbYuvlQHW8"
+        },
+        {
+            "name": "Codeforces Progress",
+            "image_path": "",
+            "description": "An android application that tracks the progress of the user in Codeforces according to the difficulty level of the problems s/he solves.",
+            "github": "https://github.com/kcnaiamh/Codeforces-Progress"
+        },
+        {
+            "name": "Leetcode Helper",
+            "image_path": "",
+            "description": "Leetcode test case to normal useable test case converter",
+            "github": "https://github.com/kcnaiamh/Leetcode_Helper"
+        },
+        {
+            "name": "Testcase Parser",
+            "image_path": "",
+            "description": "Parses test cases from an online judge problem and validate the code by comparing I/O.",
+            "github": "https://github.com/kcnaiamh/Testcase-Parser"
+        },
+        {
+            "name": "Terminal File Explorer",
+            "image_path": "",
+            "description": "Command line file explorer using direct system call of linux.",
+            "github": "https://github.com/kcnaiamh/Terminal-File-Explorer"
+        },
+        {
+            "name": "Codeforces Submission Counter",
+            "image_path": "",
+            "description": "A command line utility for checking real time submission count of each problem according to rank of participants.",
+            "github": "https://github.com/kcnaiamh/Codeforces-Submission-Counter"
+        },
+        {
+            "name": "Snake Game",
+            "image_path": "",
+            "description": "This is a simple Snake game implemented in C++ using the GLUT (OpenGL Utility Toolkit) library for graphics.",
+            "github": "https://github.com/kcnaiamh/Snake-Game"
+        },
+        {
+            "name": "Disas2Dbg",
+            "image_path": "",
+            "description": "Convert memory address from disassembler to debugger or vice versa",
+            "github": "https://github.com/kcnaiamh/disas2dbg"
+        },
+        {
+            "name": "Cybersecurity Companies in Bangladesh",
+            "image_path": "",
+            "description": "A project to create a compiled list of Cybersecurity Ventures in Bangladesh.A project to create a compiled list of Cybersecurity Ventures in Bangladesh.",
+            "github": "https://github.com/kcnaiamh/cybersecurity-companies-in-bangladesh"
+        }
+
+    ],
+    "badges": [
+        {
+            "name": "HackerRank Java",
+            "image_path": "/src/assets/badge_HackerRank_Java.png",
+            "description": ""
+        },
+        {
+            "name": "HackerRank C",
+            "image_path": "/src/assets/badge_HackerRank_C.png",
+            "description": ""
+        },
+        {
+            "name": "HackerRank SQL",
+            "image_path": "/src/assets/badge_HackerRank_SQL.png",
+            "description": ""
+        },
+        {
+            "name": "Intorduction To Cybersecurity",
+            "image_path": "/src/assets/badge_Cisco_IntroductionToCybersecurity.png",
+            "description": ""
+        },
+        {
+            "name": "TryHackMe",
+            "image_path": "/src/assets/badge_THM.png",
+            "description": ""
+        }
+    ]
 }

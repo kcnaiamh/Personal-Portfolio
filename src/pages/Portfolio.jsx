@@ -9,7 +9,7 @@ const PortfolioPage = () => {
 	const [cardIndex, setCardIndex] = useState(0);
 	const [showModal, setShowModal] = useState(false);
 	const [activeBtn, setActiveBtn] = useState("certBtn");
-
+	const [curCat, setCurCat] = useState("certs");
 	const modalRef = useRef();
 
 	useEffect(() => {
@@ -34,10 +34,10 @@ const PortfolioPage = () => {
 					}}
 					className="fixed z-10 inset-0 bg-black bg-opacity-80 backdrop-blur-md flex justify-center items-center">
 					<div className="max-w-md">
-						<img src={dbInfo["certs"][cardIndex].image_path} alt="" />
+						<img src={dbInfo[curCat][cardIndex].image_path} alt="" />
 						<div>
-							<p>{dbInfo["certs"][cardIndex].name}</p>
-							<p>{dbInfo["certs"][cardIndex].description}</p>
+							<p>{dbInfo[curCat][cardIndex].name}</p>
+							<p>{dbInfo[curCat][cardIndex].description}</p>
 						</div>
 					</div>
 				</div>
@@ -45,29 +45,46 @@ const PortfolioPage = () => {
 
 			<div>
 				<nav className="space-x-4">
-					{/* prettier-ignore */}
-					<button onClick={() => setActiveBtn("certBtn")}>Certifications</button>
-					<button onClick={() => setActiveBtn("projectBtn")}>Projects</button>
-					<button onClick={() => setActiveBtn("badgeBtn")}>Badges</button>
+					<button
+						onClick={() => {
+							setActiveBtn("certBtn");
+							setCurCat("certs");
+						}}>
+						Certifications
+					</button>
+					<button
+						onClick={() => {
+							setActiveBtn("projectBtn");
+							setCurCat("projects");
+						}}>
+						Projects
+					</button>
+					<button
+						onClick={() => {
+							setActiveBtn("badgeBtn");
+							setCurCat("badges");
+						}}>
+						Badges
+					</button>
 				</nav>
 
 				{activeBtn === "certBtn" && (
 					<PortfolioCards
-						info={dbInfo["certs"]}
+						info={dbInfo[curCat]}
 						handleOpenModal={handleOpenModal}
 					/>
 				)}
 
 				{activeBtn === "projectBtn" && (
 					<PortfolioCards
-						info={dbInfo["projects"]}
+						info={dbInfo[curCat]}
 						handleOpenModal={handleOpenModal}
 					/>
 				)}
 
 				{activeBtn === "badgeBtn" && (
 					<PortfolioCards
-						info={dbInfo["badges"]}
+						info={dbInfo[curCat]}
 						handleOpenModal={handleOpenModal}
 					/>
 				)}

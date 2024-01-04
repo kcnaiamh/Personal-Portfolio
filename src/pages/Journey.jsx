@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../layout/Layout";
 
-const BlogPage = () => {
+const JourneyPage = () => {
 	return (
 		<Layout>
-			<h1>blog page</h1>
+			<h1>My Journey page</h1>
 		</Layout>
 	);
 };
 
-export default BlogPage;
+export default JourneyPage;

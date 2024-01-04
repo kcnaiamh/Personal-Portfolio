@@ -32,7 +32,9 @@ const ContactPage = () => {
 			)
 			.then(
 				(result) => {
-					toast.success("Your message has been sent to Kcnaiamh");
+					toast.success("Your message has been sent to Kcnaiamh", {
+						duration: 4000,
+					});
 				},
 				(error) => {
 					toast.error("Something went wrong!\nPlease try again later.");

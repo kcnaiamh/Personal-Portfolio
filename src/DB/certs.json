@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Certified AppSec Practitioner",
+        "image_path": "/src/assets/cert_CertifiedAppSecPractitioner.jpg"
+    },
+    {
+        "name": "Problem Solving (Intermediate)",
+        "image_path": "/src/assets/cert_HackerRank_IntermediateProblemSolving.jpg"
+    }
+]

@@ -18,27 +18,123 @@ const ResumePage = () => {
 							</div>
 							<div className="pl-10">
 								<h3 className="timeline-title">
-									Lion Parcel as Site Reliability Engineer (SRE)
+									Assistant Cybersecurity Instructor @ Ostad
 								</h3>
-								<span className="timeline-date">13 November 2021</span>
-								{/* prettier-ignore */}
+								<span className="timeline-date">Aug 2023 - Present</span>
 								<div className="text-gray-200">
-									- Support the developers about their problems and needs <br />
-									- Develop and maintain automated CI/CD pipeline for code deployment using Jenkins to serve deployment every time <br />
-									- Develop and maintain deployment mobile apps using Bitrise and Fastlane for Android and iOS <br />
-									- Provisioned infrastructure, servers and service as code using Terraform <br />
-									- Setup and maintain monitoring, tracing and logging tools like ELK, Grafana and Datadog <br />
-									- Create monitoring alert for service, database and log based metric. Reducing error to production <br />
-									- Manage and monitoring orchestrated docker container cluster using Kubernetes with 99.8% uptime <br />
-									- Actively manage, improve, and monitor cloud infrastructure services on AWS and GCP including backups, patches, and scaling <br />
-									- Managed GitHub repositories and permissions, including branching and tagging <br />
-									- Develop and maintain scripts to automate tasks <br />
-									- Inject automation testing on CICD Pipeline <br />
-									- Increase the number of Jenkins executors by scaling Jenkins agents in Kubernetes <br />
-									- Speeding up Go and Nodejs CICD using cache mechanism on Jenkins <br />
-									- Involved in implementing single dashboard monitoring using Prometheus, Thanos and Grafana <br />
-									- Successful and involved cloud migration from GCP to AWS with minimal downtime <br />
-									Jakarta, Indonesia
+									I explain complex cybersecurity concepts simply so that
+									students from different background can understand it. The
+									quizzes, assignments, and live tests I develop ensure the
+									students' practical and theoretical understanding.
+								</div>
+							</div>
+						</div>
+
+						<div className="relative">
+							<div className="dot" title="current event">
+								<div className="dot absolute -top-1 -left-1"></div>
+							</div>
+							<div className="pl-10">
+								<h3 className="timeline-title">
+									Founder & Security Researcher @ ReSINC
+								</h3>
+								<span className="timeline-date">Sep 2022 - Present</span>
+								<div className="text-gray-200">
+									Building a culture of cybersecurity around the campus through
+									CTFs, Bug Bounty programs, Research, and Red/Blue team
+									exercises with some amazing juniors and seniors. Guiding them
+									with the resource and experience what we need when we were in
+									their shoes.
+									<br />
+									As a pioneer member of this group, it's my dream to see
+									students from our university, SUST, become future leaders in
+									the exciting field of cyberspace.
+								</div>
+							</div>
+						</div>
+
+						<div className="relative">
+							<div className="dot" title="current event">
+								<div className="dot absolute -top-1 -left-1"></div>
+							</div>
+							<div className="pl-10">
+								<h3 className="timeline-title">
+									Content Engineering @ PORIDHI.IO
+								</h3>
+								<span className="timeline-date">Jul 2022 - Sep 2022</span>
+								<div className="text-gray-200">
+									I've created 12 video lessons and zine scripts that covered
+									key topics including Wireshark usage, network protocol
+									understanding via packet analysis, troubleshooting with
+									Wireshark and Dumpcap, exploring Nmap commands using
+									Wireshark, capturing HTTP passwords, and unraveling SSL/TLS
+									security through packet analysis. Additionally, I authored
+									zine scripts on DNS and Linux Cron Jobs.
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section className="w-[800px]">
+					<div className="sticky -top-3 py-3 z-10">
+						<h1 className="group-date">Education</h1>
+					</div>
+
+					<div className="timeline">
+						<div className="relative">
+							<div className="dot" title="current event">
+								<div className="dot absolute -top-1 -left-1 animate-ping"></div>
+							</div>
+							<div className="pl-10">
+								<h3 className="timeline-title">
+									Shahjalal University of Science and Technology
+								</h3>
+								<span className="timeline-date">Jan 2019 - Jan 2024</span>
+								<div className="text-gray-200">
+									Computer Science & Engineering <br />
+									Sylhet, Bangladesh
+								</div>
+							</div>
+						</div>
+
+						<div className="relative">
+							<div className="dot" title="current event">
+								<div className="dot absolute -top-1 -left-1"></div>
+							</div>
+							<div className="pl-10">
+								<h3 className="timeline-title">Hazera-Taju Degree College</h3>
+								<span className="timeline-date">Jul 2016 - Jul 2018</span>
+								<div className="text-gray-200">
+									Majored in Science <br />
+									Chittagong, Bangladesh
+								</div>
+							</div>
+						</div>
+
+						<div className="relative">
+							<div className="dot" title="current event">
+								<div className="dot absolute -top-1 -left-1"></div>
+							</div>
+							<div className="pl-10">
+								<h3 className="timeline-title">Taekwondo</h3>
+								<span className="timeline-date">May 2016 - Oct 2016</span>
+								<div className="text-gray-200">
+									7th Kup - CJKS Gymnasium <br />
+									Chittagong, Bangladesh
+								</div>
+							</div>
+						</div>
+
+						<div className="relative">
+							<div className="dot" title="current event">
+								<div className="dot absolute -top-1 -left-1"></div>
+							</div>
+							<div className="pl-10">
+								<h3 className="timeline-title">Nasirabad Govt. High School</h3>
+								<span className="timeline-date">Jan 2011 - May 2016</span>
+								<div className="text-gray-200">
+									JSC, SSC (Science) <br />
+									Chittagong, Bangladesh
 								</div>
 							</div>
 						</div>

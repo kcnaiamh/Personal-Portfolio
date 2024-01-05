@@ -45,8 +45,10 @@ const ContactPage = () => {
 	return (
 		<Layout>
 			<h1 className="capitalize font-bold text-2xl mb-5">Contact</h1>
-
-			<form ref={form} onSubmit={sendEmail}>
+			<p>
+				Open for opportunities: <b className="text-green-500">Yes</b>
+			</p>
+			<form ref={form} onSubmit={sendEmail} className="mt-3">
 				<div className="flex space-x-10">
 					<div className="mb-4 flex-1">
 						<label

@@ -37,29 +37,29 @@ const Header = () => {
 				<img
 					src="/src/assets/me.jpeg"
 					alt="Profile Photo"
-					className="max-h-40 max-w-40 rounded-full ring-8 ring-gray-700"
+					className="max-h-40 max-w-40 rounded-full ring-8 ring-[#14213D] hover:ring-[#FCA311]"
 				/>
 			</div>
 
-			<div className="flex bg-gray-700 text-white rounded-xl py-5  mb-14  shadow-slate-700 shadow-lg">
+			<div className="flex bg-[#14213D] text-[#E5E5E5] rounded-xl py-5  mb-14  shadow-[#14213D] shadow-lg">
 				<div className="flex flex-1">
 					<div className="mr-10 ml-60 space-y-2">
 						<p className="text-white text-xl">
-							<b>Naimul</b> Islam
+							<b className=" text-green-500 font-extrabold">Naimul</b> Islam
 						</p>
-						<p className="text-gray-400 text-sm">DevSecOps | SRE | Infosec</p>
+						<p className="text-white text-sm">DevSecOps | SRE | Infosec</p>
 						<div className="flex space-x-2">
 							<a href="https://www.linkedin.com/in/kcnaiamh/">
-								<IoLogoLinkedin size="15" />
+								<IoLogoLinkedin size="15" className="hover:text-[#FCA311]" />
 							</a>
 							<a href="https://github.com/kcnaiamh">
-								<FaGithub size="15" />
+								<FaGithub size="15" className="hover:text-[#FCA311]" />
 							</a>
 							<a href="https://www.youtube.com/@kcnaiamh">
-								<IoLogoYoutube size="15" />
+								<IoLogoYoutube size="15" className="hover:text-[#FCA311]" />
 							</a>
 							<a href="https://hushup.app/naim19">
-								<FaUserSecret size="13" />
+								<FaUserSecret size="13" className="hover:text-[#FCA311]" />
 							</a>
 						</div>
 					</div>
@@ -73,7 +73,7 @@ const Header = () => {
 							</p>
 							<a
 								href="mailto:naimul9m@gmail.com"
-								className="text-white text-sm">
+								className="text-white text-sm hover:text-[#FCA311]">
 								naimul9m@gmail.com
 							</a>
 						</div>

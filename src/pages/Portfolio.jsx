@@ -2,14 +2,16 @@ import React, { useEffect, useRef, useState } from "react";
 import Layout from "../layout/Layout";
 import getCerts from "../APIRequest/APIRequest";
 import PortfolioCards from "../components/PortfolioCards";
+import ChipTabs, { tabs } from "../components/PortfolioTabBar";
+
+let cat = {};
 
 const PortfolioPage = () => {
 	const [dbInfo, setDBInfo] = useState([]);
 
 	const [cardIndex, setCardIndex] = useState(0);
 	const [showModal, setShowModal] = useState(false);
-	const [activeBtn, setActiveBtn] = useState("certBtn");
-	const [curCat, setCurCat] = useState("certs");
+	const [activeBtn, setActiveBtn] = useState(tabs[0]);
 	const modalRef = useRef();
 
 	useEffect(() => {
@@ -17,6 +19,12 @@ const PortfolioPage = () => {
 			let res = await getCerts();
 			setDBInfo(res);
 		})();
+	}, []);
+
+	useEffect(() => {
+		cat[tabs[0]] = "certs";
+		cat[tabs[1]] = "projects";
+		cat[tabs[2]] = "badges";
 	}, []);
 
 	const handleOpenModal = (index) => {
@@ -34,57 +42,35 @@ const PortfolioPage = () => {
 					}}
 					className="fixed z-10 inset-0 bg-black bg-opacity-80 backdrop-blur-md flex justify-center items-center">
 					<div className="max-w-md">
-						<img src={dbInfo[curCat][cardIndex].image_path} alt="" />
+						<img src={dbInfo[cat[activeBtn]][cardIndex].image_path} alt="" />
 						<div>
-							<p>{dbInfo[curCat][cardIndex].name}</p>
-							<p>{dbInfo[curCat][cardIndex].description}</p>
+							<p>{dbInfo[cat[activeBtn]][cardIndex].name}</p>
+							<p>{dbInfo[cat[activeBtn]][cardIndex].description}</p>
 						</div>
 					</div>
 				</div>
 			)}
 
-			<div>
-				<nav className="space-x-4">
-					<button
-						onClick={() => {
-							setActiveBtn("certBtn");
-							setCurCat("certs");
-						}}>
-						Certifications
-					</button>
-					<button
-						onClick={() => {
-							setActiveBtn("projectBtn");
-							setCurCat("projects");
-						}}>
-						Projects
-					</button>
-					<button
-						onClick={() => {
-							setActiveBtn("badgeBtn");
-							setCurCat("badges");
-						}}>
-						Badges
-					</button>
-				</nav>
+			<div className="px-4 py-10 flex items-center flex-wrap gap-2">
+				<ChipTabs selected={activeBtn} setSelected={setActiveBtn} />
 
-				{activeBtn === "certBtn" && (
+				{activeBtn === tabs[0] && (
 					<PortfolioCards
-						info={dbInfo[curCat]}
+						info={dbInfo[cat[activeBtn]]}
 						handleOpenModal={handleOpenModal}
 					/>
 				)}
 
-				{activeBtn === "projectBtn" && (
+				{activeBtn === tabs[1] && (
 					<PortfolioCards
-						info={dbInfo[curCat]}
+						info={dbInfo[cat[activeBtn]]}
 						handleOpenModal={handleOpenModal}
 					/>
 				)}
 
-				{activeBtn === "badgeBtn" && (
+				{activeBtn === tabs[2] && (
 					<PortfolioCards
-						info={dbInfo[curCat]}
+						info={dbInfo[cat[activeBtn]]}
 						handleOpenModal={handleOpenModal}
 					/>
 				)}

@@ -44,19 +44,19 @@ const AboutPage = () => {
 			</h1>
 			<div className="flex-col">
 				<div className="flex">
-					<div className="max-w-sm p-3 border-2 m-2 border-slate-200">
+					<div className="flex-1 p-3 border-2 m-2 border-slate-200">
 						<TbCloudNetwork size="30" className="mx-auto" />
 						<center>Computer Networking</center>
-						<p>
+						<center>
 							Networking is the blood of digital system. If something goes wrong
 							with our body doctors can generally detect it by testing blood.
 							Similarly, if something goes wrong in a digital system, inspecting
 							network packet often gives you answer. This is of the the most
 							fundamental thing that I'm trying to mastery.
-						</p>
+						</center>
 					</div>
 
-					<div className="max-w-sm p-3 border-2 m-2 border-slate-200">
+					<div className="flex-1 p-3 border-2 m-2 border-slate-200">
 						<TbCloudComputing size="30" className="mx-auto" />
 						<center>Cloud Computing</center>
 						<center>
@@ -67,7 +67,7 @@ const AboutPage = () => {
 					</div>
 				</div>
 				<div className="flex">
-					<div className="max-w-sm p-3 border-2 m-2 border-slate-200">
+					<div className="flex-1 p-3 border-2 m-2 border-slate-200">
 						<TbDeviceImacSearch size="30" className="mx-auto" />
 						<center>Digital Forensics</center>
 						<center>
@@ -78,7 +78,7 @@ const AboutPage = () => {
 							computers than most of the people I know.
 						</center>
 					</div>
-					<div className="max-w-sm p-3 border-2 m-2 border-slate-200">
+					<div className="flex-1 p-3 border-2 m-2 border-slate-200">
 						<CgInfinity size="30" className="mx-auto" />
 						<center>DevOps</center>
 						<center>

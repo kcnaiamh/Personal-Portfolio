@@ -3,7 +3,6 @@ import { IoPersonSharp, IoDocumentText } from "react-icons/io5";
 import { GrCodeSandbox } from "react-icons/gr";
 import { MdContactPhone } from "react-icons/md";
 import { NavLink } from "react-router-dom";
-import { GiHiking } from "react-icons/gi";
 
 const SideBar = () => {
 	const SideBarIcon = ({ icon, tip, epoint }) => {
@@ -29,11 +28,6 @@ const SideBar = () => {
 				icon={<GrCodeSandbox size="30" />}
 				tip="portfolio"
 				epoint="/portfolio"
-			/>
-			<SideBarIcon
-				icon={<GiHiking size="30" />}
-				tip="my journey"
-				epoint="/journey"
 			/>
 			<SideBarIcon
 				icon={<MdContactPhone size="30" />}

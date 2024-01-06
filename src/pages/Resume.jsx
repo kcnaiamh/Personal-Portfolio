@@ -6,6 +6,7 @@ const ResumePage = () => {
 		<Layout>
 			<h1 className="capitalize font-bold text-2xl mb-2 ">Resume</h1>
 			<div class="w-12 h-1 bg-[#FCA311] mb-5" />
+
 			<div className="flex-col items-center justify-center mb-20">
 				<section className="w-[800px]">
 					<div className="sticky -top-3 py-3 z-10">
@@ -15,11 +16,12 @@ const ResumePage = () => {
 					<div className="timeline">
 						<div className="relative">
 							<div className="dot" title="current event">
-								<div className="dot absolute -top-1 -left-1 animate-ping"></div>
+								<div className="dot absolute -top-2 -left-2 animate-ping"></div>
 							</div>
 							<div className="pl-10">
 								<h3 className="timeline-title">
-									Assistant Cybersecurity Instructor @{" "}
+									Assistant Cybersecurity Instructor{" "}
+									<span className="text-[#fca311]">@</span>{" "}
 									<span className="bg-white text-[#14213d] px-1">Ostad</span>
 								</h3>
 								<span className="timeline-date">Aug 2023 - Present</span>
@@ -34,11 +36,12 @@ const ResumePage = () => {
 
 						<div className="relative">
 							<div className="dot" title="current event">
-								<div className="dot absolute -top-1 -left-1"></div>
+								<div className="dot absolute -top-2 -left-2"></div>
 							</div>
 							<div className="pl-10">
 								<h3 className="timeline-title">
-									Founder & Security Researcher @{" "}
+									Founder & Security Researcher{" "}
+									<span className="text-[#fca311]">@</span>{" "}
 									<span className="bg-white text-[#14213d] px-1">ReSINC</span>
 								</h3>
 								<span className="timeline-date">Sep 2022 - Present</span>
@@ -58,11 +61,11 @@ const ResumePage = () => {
 
 						<div className="relative">
 							<div className="dot" title="current event">
-								<div className="dot absolute -top-1 -left-1"></div>
+								<div className="dot absolute -top-2 -left-2"></div>
 							</div>
 							<div className="pl-10">
 								<h3 className="timeline-title">
-									Content Engineering @{" "}
+									Content Engineering <span className="text-[#fca311]">@</span>{" "}
 									<span className="bg-white text-[#14213d] px-1">
 										PORIDHI.IO
 									</span>
@@ -89,7 +92,7 @@ const ResumePage = () => {
 					<div className="timeline">
 						<div className="relative">
 							<div className="dot" title="current event">
-								<div className="dot absolute -top-1 -left-1 animate-ping"></div>
+								<div className="dot absolute -top-2 -left-2 animate-ping"></div>
 							</div>
 							<div className="pl-10">
 								<h3 className="timeline-title">
@@ -105,7 +108,7 @@ const ResumePage = () => {
 
 						<div className="relative">
 							<div className="dot" title="current event">
-								<div className="dot absolute -top-1 -left-1"></div>
+								<div className="dot absolute -top-2 -left-2"></div>
 							</div>
 							<div className="pl-10">
 								<h3 className="timeline-title">Hazera-Taju Degree College</h3>
@@ -119,7 +122,7 @@ const ResumePage = () => {
 
 						<div className="relative">
 							<div className="dot" title="current event">
-								<div className="dot absolute -top-1 -left-1"></div>
+								<div className="dot absolute -top-2 -left-2"></div>
 							</div>
 							<div className="pl-10">
 								<h3 className="timeline-title">Taekwondo</h3>
@@ -133,7 +136,7 @@ const ResumePage = () => {
 
 						<div className="relative">
 							<div className="dot" title="current event">
-								<div className="dot absolute -top-1 -left-1"></div>
+								<div className="dot absolute -top-2 -left-2"></div>
 							</div>
 							<div className="pl-10">
 								<h3 className="timeline-title">Nasirabad Govt. High School</h3>

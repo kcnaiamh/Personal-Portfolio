@@ -11,20 +11,12 @@
 }
 
 @layer components {
-	.sidebar-icon {
-		@apply relative flex items-center justify-center h-16 w-16 mt-3 mb-3 mx-auto bg-white text-black  hover:bg-[#FCA311] hover:text-white rounded-3xl hover:rounded-xl transition-all duration-300 ease-linear;
-	}
-
-	.sidebar-tooltip {
-		@apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-gray-900 text-xs font-bold transition-all duration-100 scale-0 origin-left;
-	}
-
 	.sidebar-hight {
 		max-height: 21.25rem;
 	}
 
 	.group-date {
-		@apply text-4xl text-[#FCA311] px-3 py-4 font-bold tracking-widest bg-[#14213d] shadow-[#14213d] shadow-xl;
+		@apply text-3xl text-[#FCA311] px-3 py-4 font-bold tracking-widest bg-[#14213d] shadow-[#14213d] shadow-xl;
 	}
 
 	.timeline {
@@ -32,7 +24,7 @@
 	}
 
 	.dot {
-		@apply absolute top-[30px] -left-3.5 bg-blue-400 h-6 w-6 rounded-full border-4 border-[#14213d];
+		@apply absolute top-[30px] -left-3.5 bg-blue-400 h-6 w-6 rounded-full border-8 border-[#14213d];
 	}
 
 	.timeline-date {
@@ -40,6 +32,6 @@
 	}
 
 	.timeline-title {
-		@apply text-3xl text-white font-semibold tracking-wide mb-2;
+		@apply text-2xl text-white font-semibold tracking-wide mb-2;
 	}
 }

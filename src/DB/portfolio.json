@@ -1,4 +1,5 @@
-{   "certs": [
+{
+    "certs": [
         {
             "name": "Certified AppSec Practitioner",
             "image_path": "/src/assets/cert_CertifiedAppSecPractitioner.jpg",
@@ -151,7 +152,6 @@
             "description": "A project to create a compiled list of Cybersecurity Ventures in Bangladesh.A project to create a compiled list of Cybersecurity Ventures in Bangladesh.",
             "github": "https://github.com/kcnaiamh/cybersecurity-companies-in-bangladesh"
         }
-
     ],
     "badges": [
         {

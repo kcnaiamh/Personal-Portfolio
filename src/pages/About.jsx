@@ -60,28 +60,36 @@ const AboutPage = () => {
 
 const BuildCard = ({ name, desc }) => {
 	return (
-		<div className="w-2/5 border-4 m-4 p-5 border-slate-200">
+		<div className="group w-2/5 border-4 m-4 p-5 border-slate-200 transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:bg-[#FCA311] hover:border-white hover:shadow-[4px_4px_0px_white]">
 			{name === "Computer Networking" && (
-				<TbCloudNetwork size="30" className="mx-auto text-[#FCA311] size-20" />
+				<TbCloudNetwork
+					size="30"
+					className="mx-auto text-[#FCA311] size-20 group-hover:text-white"
+				/>
 			)}
 			{name === "Cloud Computing" && (
 				<TbCloudComputing
 					size="30"
-					className="mx-auto text-[#FCA311] size-20"
+					className="mx-auto text-[#FCA311] size-20 group-hover:text-white"
 				/>
 			)}
 			{name === "Digital Forensics" && (
 				<TbDeviceImacSearch
 					size="30"
-					className="mx-auto text-[#FCA311] size-20"
+					className="mx-auto text-[#FCA311] size-20 group-hover:text-white"
 				/>
 			)}
 			{name === "DevOps" && (
-				<CgInfinity size="30" className="mx-auto text-[#FCA311] size-20" />
+				<CgInfinity
+					size="30"
+					className="mx-auto text-[#FCA311] size-20 group-hover:text-white"
+				/>
 			)}
 
-			<h1 className="font-extrabold text-2xl py-3">{name}</h1>
-			<div className="text-[#E5E5E5]">{desc}</div>
+			<h1 className="font-extrabold text-2xl py-3 group-hover:text-black">
+				{name}
+			</h1>
+			<div className="text-[#E5E5E5] group-hover:text-slate-900">{desc}</div>
 		</div>
 	);
 };

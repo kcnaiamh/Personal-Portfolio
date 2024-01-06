@@ -61,7 +61,6 @@ const AboutPage = () => {
 const BuildCard = ({ name, desc }) => {
 	return (
 		<div className="w-2/5 border-4 m-4 p-5 border-slate-200">
-			{console.log(`${name} | ${desc}`)}
 			{name === "Computer Networking" && (
 				<TbCloudNetwork size="30" className="mx-auto text-[#FCA311] size-20" />
 			)}

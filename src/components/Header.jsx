@@ -33,7 +33,7 @@ const Header = () => {
 
 	return (
 		<header className="mx-56 px-56 relative">
-			<div className="flex absolute ml-8 -mt-14 hover:scale-110 transition-all duration-300">
+			<div className="flex absolute ml-10 -mt-14 transition-all duration-300 hover:translate-x-[-10px] hover:translate-y-[-10px] hover:scale-105">
 				<img
 					src="/src/assets/me.jpeg"
 					alt="Profile Photo"

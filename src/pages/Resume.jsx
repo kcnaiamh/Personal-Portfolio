@@ -4,7 +4,8 @@ import Layout from "../layout/Layout";
 const ResumePage = () => {
 	return (
 		<Layout>
-			<h1 className="capitalize font-bold text-2xl mb-5 ">Resume</h1>
+			<h1 className="capitalize font-bold text-2xl mb-2 ">Resume</h1>
+			<div class="w-12 h-1 bg-[#FCA311] mb-5" />
 			<div className="flex-col items-center justify-center mb-20">
 				<section className="w-[800px]">
 					<div className="sticky -top-3 py-3 z-10">

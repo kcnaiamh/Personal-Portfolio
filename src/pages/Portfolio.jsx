@@ -34,6 +34,8 @@ const PortfolioPage = () => {
 
 	return (
 		<Layout>
+			<h1 className="capitalize font-bold text-2xl mb-2 ">Portfolio</h1>
+			<div class="w-12 h-1 bg-[#FCA311] mb-5" />
 			{showModal && (
 				<div
 					ref={modalRef}

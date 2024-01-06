@@ -8,7 +8,8 @@ import { TbDeviceImacSearch } from "react-icons/tb";
 const AboutPage = () => {
 	return (
 		<Layout>
-			<h1 className="capitalize font-bold text-2xl mb-5">Who Am I?</h1>
+			<h1 className="capitalize font-bold text-2xl mb-2">Who Am I?</h1>
+			<div class="w-12 h-1 bg-[#FCA311] mb-5" />
 			<div className="space-y-4">
 				<p>
 					Welcome to my corner of the internet! I’m thrilled to have you here.
@@ -39,9 +40,10 @@ const AboutPage = () => {
 				</p>
 			</div>
 
-			<h1 className="capitalize font-bold text-2xl mb-5 mt-5">
+			<h1 className="capitalize font-bold text-2xl mb-2 mt-5">
 				What I'm Doing
 			</h1>
+			<div class="w-12 h-1 bg-[#FCA311] mb-5" />
 			<div className="flex-col">
 				<div className="flex">
 					<div className="flex-1 p-3 border-2 m-2 border-slate-200">

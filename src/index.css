@@ -24,22 +24,22 @@
 	}
 
 	.group-date {
-		@apply text-4xl text-gray-400 px-3 py-4 font-bold tracking-widest bg-black shadow-black shadow-xl;
+		@apply text-4xl text-[#FCA311] px-3 py-4 font-bold tracking-widest bg-[#14213d] shadow-[#14213d] shadow-xl;
 	}
 
 	.timeline {
-		@apply relative border-l-4 border-gray-200 ml-3 mt-3 py-16 space-y-14;
+		@apply relative border-l-2 border-gray-500 ml-3 mt-3 py-6 space-y-14;
 	}
 
 	.dot {
-		@apply absolute top-[30px] -left-3.5 bg-blue-400 h-6 w-6 rounded-full border-4 border-black;
+		@apply absolute top-[30px] -left-3.5 bg-blue-400 h-6 w-6 rounded-full border-4 border-[#14213d];
 	}
 
 	.timeline-date {
-		@apply text-xs font-bold opacity-40 tracking-widest;
+		@apply text-xs text-[#e5e5e5] font-bold opacity-50 tracking-widest;
 	}
 
 	.timeline-title {
-		@apply text-3xl text-gray-600 font-semibold tracking-wide mb-2;
+		@apply text-3xl text-white font-semibold tracking-wide mb-2;
 	}
 }

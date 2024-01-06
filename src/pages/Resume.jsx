@@ -19,7 +19,8 @@ const ResumePage = () => {
 							</div>
 							<div className="pl-10">
 								<h3 className="timeline-title">
-									Assistant Cybersecurity Instructor @ Ostad
+									Assistant Cybersecurity Instructor @{" "}
+									<span className="bg-white text-[#14213d] px-1">Ostad</span>
 								</h3>
 								<span className="timeline-date">Aug 2023 - Present</span>
 								<div className="text-gray-200">
@@ -37,7 +38,8 @@ const ResumePage = () => {
 							</div>
 							<div className="pl-10">
 								<h3 className="timeline-title">
-									Founder & Security Researcher @ ReSINC
+									Founder & Security Researcher @{" "}
+									<span className="bg-white text-[#14213d] px-1">ReSINC</span>
 								</h3>
 								<span className="timeline-date">Sep 2022 - Present</span>
 								<div className="text-gray-200">
@@ -60,7 +62,10 @@ const ResumePage = () => {
 							</div>
 							<div className="pl-10">
 								<h3 className="timeline-title">
-									Content Engineering @ PORIDHI.IO
+									Content Engineering @{" "}
+									<span className="bg-white text-[#14213d] px-1">
+										PORIDHI.IO
+									</span>
 								</h3>
 								<span className="timeline-date">Jul 2022 - Sep 2022</span>
 								<div className="text-gray-200">

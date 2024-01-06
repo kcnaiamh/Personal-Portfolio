@@ -36,13 +36,14 @@ const PortfolioPage = () => {
 		<Layout>
 			<h1 className="capitalize font-bold text-2xl mb-2 ">Portfolio</h1>
 			<div class="w-12 h-1 bg-[#FCA311] mb-5" />
+
 			{showModal && (
 				<div
 					ref={modalRef}
 					onClick={(e) => {
 						modalRef.current === e.target && setShowModal(false);
 					}}
-					className="fixed z-10 inset-0 bg-black bg-opacity-80 backdrop-blur-md flex justify-center items-center">
+					className="fixed z-20 inset-0 bg-black bg-opacity-80 backdrop-blur-md flex justify-center items-center">
 					<div className="max-w-md">
 						<img src={dbInfo[cat[activeBtn]][cardIndex].image_path} alt="" />
 						<div>

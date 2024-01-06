@@ -88,7 +88,7 @@ const Header = () => {
 					<div className="mx-10 space-y-4">
 						<div>
 							<p className="text-gray-400 text-xs text-transform: uppercase">
-								Year Left
+								Remaining Year
 							</p>
 							<div>
 								{days < 10 ? "0" + days : days}:

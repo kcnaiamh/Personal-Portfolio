@@ -2,9 +2,12 @@ import axios from "axios";
 
 const BASE_URL = "/src/DB";
 
-async function getCerts() {
-	let res = await axios.get(BASE_URL + "/certs.json");
+export async function getPortfoliInfo() {
+	let res = await axios.get(BASE_URL + "/portfolio.json");
 	return res.data;
 }
 
-export default getCerts;
+export async function getAboutMeInfo() {
+	let res = await axios.get(BASE_URL + "/about.json");
+	return res.data;
+}

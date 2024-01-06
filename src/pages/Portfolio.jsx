@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Layout from "../layout/Layout";
-import getCerts from "../APIRequest/APIRequest";
+import { getPortfoliInfo } from "../APIRequest/APIRequest";
 import PortfolioCards from "../components/PortfolioCards";
 import ChipTabs, { tabs } from "../components/PortfolioTabBar";
 
@@ -16,7 +16,7 @@ const PortfolioPage = () => {
 
 	useEffect(() => {
 		(async () => {
-			let res = await getCerts();
+			let res = await getPortfoliInfo();
 			setDBInfo(res);
 		})();
 	}, []);

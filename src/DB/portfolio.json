@@ -2,162 +2,162 @@
     "certs": [
         {
             "name": "Certified AppSec Practitioner",
-            "image_path": "/src/assets/cert_CertifiedAppSecPractitioner.jpg",
+            "image_path": "/cert_CertifiedAppSecPractitioner.jpg",
             "description": ""
         },
         {
             "name": "AWS Cloud Technical Essentials",
-            "image_path": "/src/assets/cert_Coursera_AWSCloudTechnicalEssentials.jpeg",
+            "image_path": "/cert_Coursera_AWSCloudTechnicalEssentials.jpeg",
             "description": ""
         },
         {
             "name": "Cloud Security Basics",
-            "image_path": "/src/assets/cert_Coursera_CloudSecurityBasics.jpeg",
+            "image_path": "/cert_Coursera_CloudSecurityBasics.jpeg",
             "description": ""
         },
         {
             "name": "Professional Cyber Security - Career Focused Advanced Training",
-            "image_path": "/src/assets/cert_Devskill_ProfessionalCyberSecurity.jpeg",
+            "image_path": "/cert_Devskill_ProfessionalCyberSecurity.jpeg",
             "description": ""
         },
         {
             "name": "Fortinet Network Security Associate 1",
-            "image_path": "/src/assets/cert_Fortinet_NSE1.jpg",
+            "image_path": "/cert_Fortinet_NSE1.jpg",
             "description": ""
         },
         {
             "name": "Fortinet Network Security Associate 2",
-            "image_path": "/src/assets/cert_Fortinet_NSE2.jpg",
+            "image_path": "/cert_Fortinet_NSE2.jpg",
             "description": ""
         },
         {
             "name": "Intermediate Machine Learning",
-            "image_path": "/src/assets/cert_Kaggle_IntermediateML.jpeg",
+            "image_path": "/cert_Kaggle_IntermediateML.jpeg",
             "description": ""
         },
         {
             "name": "Pandas",
-            "image_path": "/src/assets/cert_Kaggle_Pandas.jpeg",
+            "image_path": "/cert_Kaggle_Pandas.jpeg",
             "description": ""
         },
         {
             "name": "Intro To Machine Learning",
-            "image_path": "/src/assets/cert_Kaggle_IntroToML.jpeg",
+            "image_path": "/cert_Kaggle_IntroToML.jpeg",
             "description": ""
         },
         {
             "name": "Splunk Infrastructure Overview",
-            "image_path": "/src/assets/cert_Splunk_SplunkInfrastructureOverview.jpg",
+            "image_path": "/cert_Splunk_SplunkInfrastructureOverview.jpg",
             "description": ""
         },
         {
             "name": "Splunk User Behavior Analytics",
-            "image_path": "/src/assets/cert_Splunk_SplunkUBA.jpg",
+            "image_path": "/cert_Splunk_SplunkUBA.jpg",
             "description": ""
         },
         {
             "name": "Practical Malware Analysis & Triage",
-            "image_path": "/src/assets/cert_TCM_PMAT.jpg",
+            "image_path": "/cert_TCM_PMAT.jpg",
             "description": ""
         },
         {
             "name": "AWS for SAA",
-            "image_path": "/src/assets/cert_Tecognize_AWS.jpg",
+            "image_path": "/cert_Tecognize_AWS.jpg",
             "description": ""
         },
         {
             "name": "Pre Security Learning Path",
-            "image_path": "/src/assets/cert_THM_PreSecurityLearningPath.jpeg",
+            "image_path": "/cert_THM_PreSecurityLearningPath.jpeg",
             "description": ""
         },
         {
             "name": "Fundamentals of Networking Engineering",
-            "image_path": "/src/assets/cert_Udemy_FundamentalsOfNetworkingEngineering.jpeg",
+            "image_path": "/cert_Udemy_FundamentalsOfNetworkingEngineering.jpeg",
             "description": ""
         },
         {
             "name": "The SQL Programming Essentials 2021 Immersive Training",
-            "image_path": "/src/assets/cert_Udemy_SQLProgrammingEssentials.jpeg",
+            "image_path": "/cert_Udemy_SQLProgrammingEssentials.jpeg",
             "description": ""
         },
         {
             "name": "Getting Started With Wireshark: The Ultimate Hands-on Course",
-            "image_path": "/src/assets/cert_Udemy_Wireshark.jpeg",
+            "image_path": "/cert_Udemy_Wireshark.jpeg",
             "description": ""
         },
         {
             "name": "Problem Solving (Intermediate)",
-            "image_path": "/src/assets/cert_HackerRank_IntermediateProblemSolving.jpg",
+            "image_path": "/cert_HackerRank_IntermediateProblemSolving.jpg",
             "description": ""
         }
     ],
     "projects": [
         {
             "name": "How to create VPC in AWS and connect EC2 instance to the internet from public and private subnet",
-            "image_path": "/src/assets/project_AWS.png",
+            "image_path": "/project_AWS.png",
             "techstack": "AWS",
             "description": "",
             "video": "https://youtu.be/AkMtgD4pkxs"
         },
         {
             "name": "SIEM Home Lab",
-            "image_path": "/src/assets/project_ELK.png",
+            "image_path": "/project_ELK.png",
             "techstack": "Elasticsearch - Logstash - Kibana - VMware",
             "description": "Built a SIEM Home Lab, utilizing the ELK Stack for log analysis and monitoring. The core of this setup is a Debian 12 server serving as the central ELK hub, while a Windows 10 machine acts as the agent.",
             "video": "https://youtu.be/MbbYuvlQHW8"
         },
         {
             "name": "Codeforces Progress",
-            "image_path": "/src/assets/project_CodeforcesProgress.png",
+            "image_path": "/project_CodeforcesProgress.png",
             "techstack": "Java - Android Studio",
             "description": "An android application that tracks the progress of the user in Codeforces according to the difficulty level of the problems s/he solves.",
             "github": "https://github.com/kcnaiamh/Codeforces-Progress"
         },
         {
             "name": "Leetcode Helper",
-            "image_path": "/src/assets/project_LeetcodeHelper.png",
+            "image_path": "/project_LeetcodeHelper.png",
             "techstack": "Java Swing",
             "description": "Leetcode test case to normal useable test case converter",
             "github": "https://github.com/kcnaiamh/Leetcode_Helper"
         },
         {
             "name": "Testcase Parser",
-            "image_path": "/src/assets/place_holder.png",
+            "image_path": "/place_holder.png",
             "techstack": "Python - Bash",
             "description": "Parses test cases from an online judge problem and validate the code by comparing I/O.",
             "github": "https://github.com/kcnaiamh/Testcase-Parser"
         },
         {
             "name": "Codeforces Submission Counter",
-            "image_path": "/src/assets/project_CodeforcesSubmissionCounter.png",
+            "image_path": "/project_CodeforcesSubmissionCounter.png",
             "techstack": "Python",
             "description": "A command line utility for checking real time submission count of each problem according to rank of participants.",
             "github": "https://github.com/kcnaiamh/Codeforces-Submission-Counter"
         },
         {
             "name": "Snake Game",
-            "image_path": "/src/assets/project_SnakeGame.png",
+            "image_path": "/project_SnakeGame.png",
             "techstack": "C++ - Glut",
             "description": "This is a simple Snake game implemented in C++ using the GLUT (OpenGL Utility Toolkit) library for graphics.",
             "github": "https://github.com/kcnaiamh/Snake-Game"
         },
         {
             "name": "Terminal File Explorer",
-            "image_path": "/src/assets/place_holder.png",
+            "image_path": "/place_holder.png",
             "techstack": "C",
             "description": "Command line file explorer using direct system call of linux.",
             "github": "https://github.com/kcnaiamh/Terminal-File-Explorer"
         },
         {
             "name": "Disas2Dbg",
-            "image_path": "/src/assets/project_Disas2Dbg.png",
+            "image_path": "/project_Disas2Dbg.png",
             "techstack": "Python",
             "description": "Convert memory address from disassembler to debugger or vice versa",
             "github": "https://github.com/kcnaiamh/disas2dbg"
         },
         {
             "name": "Cybersecurity Companies in Bangladesh",
-            "image_path": "/src/assets/project_CybersecCompaniesBD.png",
+            "image_path": "/project_CybersecCompaniesBD.png",
             "description": "A project to create a compiled list of Cybersecurity Ventures in Bangladesh.A project to create a compiled list of Cybersecurity Ventures in Bangladesh.",
             "github": "https://github.com/kcnaiamh/cybersecurity-companies-in-bangladesh"
         }
@@ -165,27 +165,27 @@
     "badges": [
         {
             "name": "HackerRank Java",
-            "image_path": "/src/assets/badge_HackerRank_Java.png",
+            "image_path": "/badge_HackerRank_Java.png",
             "description": ""
         },
         {
             "name": "HackerRank C",
-            "image_path": "/src/assets/badge_HackerRank_C.png",
+            "image_path": "/badge_HackerRank_C.png",
             "description": ""
         },
         {
             "name": "HackerRank SQL",
-            "image_path": "/src/assets/badge_HackerRank_SQL.png",
+            "image_path": "/badge_HackerRank_SQL.png",
             "description": ""
         },
         {
             "name": "Intorduction To Cybersecurity",
-            "image_path": "/src/assets/badge_Cisco_IntroductionToCybersecurity.png",
+            "image_path": "/badge_Cisco_IntroductionToCybersecurity.png",
             "description": ""
         },
         {
             "name": "TryHackMe",
-            "image_path": "/src/assets/badge_THM.png",
+            "image_path": "/badge_THM.png",
             "description": ""
         }
     ]

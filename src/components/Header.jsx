@@ -35,7 +35,7 @@ const Header = () => {
 		<header className="mx-56 px-56 relative">
 			<div className="flex absolute ml-10 -mt-14 transition-all duration-300 hover:translate-x-[-10px] hover:translate-y-[-10px] hover:scale-105">
 				<img
-					src="/src/assets/me.jpeg"
+					src="/me.jpeg"
 					alt="Profile Photo"
 					className="max-h-40 max-w-40 rounded-full ring-8 ring-[#14213D] hover:ring-[#FCA311]"
 				/>

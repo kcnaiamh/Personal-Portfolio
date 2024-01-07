@@ -4,16 +4,13 @@ import { CgInfinity } from "react-icons/cg";
 import { TbCloudComputing } from "react-icons/tb";
 import { TbCloudNetwork } from "react-icons/tb";
 import { TbDeviceImacSearch } from "react-icons/tb";
-import { getAboutMeInfo } from "../APIRequest/APIRequest";
+import data from "/src/about.json";
 
 const AboutPage = () => {
 	const [dbInfo, setDBInfo] = useState([]);
 
 	useEffect(() => {
-		(async () => {
-			let res = await getAboutMeInfo();
-			setDBInfo(res);
-		})();
+		setDBInfo(data);
 	}, []);
 
 	return (

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import Layout from "../layout/Layout";
-import { getPortfoliInfo } from "../APIRequest/APIRequest";
 import PortfolioCards from "../components/PortfolioCards";
 import ChipTabs, { tabs } from "../components/PortfolioTabBar";
+import data from "/src/portfolio.json";
 
 let cat = {};
 
@@ -15,10 +15,7 @@ const PortfolioPage = () => {
 	const modalRef = useRef();
 
 	useEffect(() => {
-		(async () => {
-			let res = await getPortfoliInfo();
-			setDBInfo(res);
-		})();
+		setDBInfo(data);
 	}, []);
 
 	useEffect(() => {

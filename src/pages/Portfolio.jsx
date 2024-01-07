@@ -60,6 +60,7 @@ const PortfolioPage = () => {
 				{activeBtn === tabs[0] && (
 					<PortfolioCards
 						info={dbInfo[cat[activeBtn]]}
+						activeBtn={activeBtn}
 						handleOpenModal={handleOpenModal}
 					/>
 				)}
@@ -67,6 +68,7 @@ const PortfolioPage = () => {
 				{activeBtn === tabs[1] && (
 					<PortfolioCards
 						info={dbInfo[cat[activeBtn]]}
+						activeBtn={activeBtn}
 						handleOpenModal={handleOpenModal}
 					/>
 				)}
@@ -74,6 +76,7 @@ const PortfolioPage = () => {
 				{activeBtn === tabs[2] && (
 					<PortfolioCards
 						info={dbInfo[cat[activeBtn]]}
+						activeBtn={activeBtn}
 						handleOpenModal={handleOpenModal}
 					/>
 				)}

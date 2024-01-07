@@ -58,7 +58,9 @@ const Header = () => {
 							<a href="https://www.youtube.com/@kcnaiamh">
 								<IoLogoYoutube size="15" className="hover:text-[#FCA311]" />
 							</a>
-							<a href="https://hushup.app/naim19">
+							<a
+								href="https://hushup.app/naim19"
+								title="Give feedback anonymously. (e.g. How can I improve myself?)">
 								<FaUserSecret size="13" className="hover:text-[#FCA311]" />
 							</a>
 						</div>

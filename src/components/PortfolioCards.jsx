@@ -1,6 +1,6 @@
 import React from "react";
 
-const PortfolioCards = ({ info, handleOpenModal }) => {
+const PortfolioCards = ({ info, activeBtn, handleOpenModal }) => {
 	return (
 		<div className="flex flex-wrap justify-center mt-5 grid-cols-2 space-x-3 space-y-3">
 			{info &&
@@ -15,11 +15,30 @@ const PortfolioCards = ({ info, handleOpenModal }) => {
 									alt=""
 									className="object-cover w-full h-full transition-transform duration-300 transform scale-100 group-hover:scale-110"
 								/>
-								<div className="absolute bottom-0 left-0 right-0 px-2 bg-black bg-opacity-75 overflow-hidden w-full  transition-all duration-500 ease-in-out h-0 group-hover:h-1/2">
-									<p>{item["description"]}</p>
-								</div>
+								{activeBtn === "Projects" && (
+									<div className="absolute bottom-0 left-0 right-0 px-2 bg-black bg-opacity-75 overflow-hidden w-full  transition-all duration-300 ease-in-out h-0 group-hover:h-auto group-hover:py-2">
+										<center className="font-bold text-lg">Tech Stack</center>
+										<center>{item["techstack"]}</center>
+									</div>
+								)}
 							</div>
-							<p className="text-white pt-4">{item["name"]}</p>
+							<p className="text-white pt-4 mb-3 font-bold">{item["name"]}</p>
+							<div className="flex space-x-1">
+								{"github" in item && (
+									<a
+										href={item["github"]}
+										className="bg-[#fca311] opacity-85 text-black font-mono text-xs py-1 px-3 rounded">
+										Github
+									</a>
+								)}
+								{"video" in item && (
+									<a
+										href={item["video"]}
+										className="bg-[#fca311] opacity-85 text-black font-mono text-xs py-1 px-3 rounded">
+										Video
+									</a>
+								)}
+							</div>
 						</div>
 					);
 				})}

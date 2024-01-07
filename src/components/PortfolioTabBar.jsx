@@ -4,8 +4,6 @@ import { useState } from "react";
 export const tabs = ["Certifications", "Projects", "Badges"];
 
 const ChipTabs = ({ selected, setSelected }) => {
-	// const [selected, setSelected] = useState(tabs[0]);
-
 	return (
 		<div>
 			{tabs.map((tab) => (

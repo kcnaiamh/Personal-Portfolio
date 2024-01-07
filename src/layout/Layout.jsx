@@ -10,7 +10,7 @@ const Layout = (props) => {
 				<Header />
 				<div className="flex space-x-11 mx-56 px-56">
 					<SideBar />
-					<div className=" text-white bg-[#14213d] rounded-lg shadow-lg shadow-[#14213D] w-full px-6 py-6 mb-24">
+					<div className=" text-white bg-[#14213d] rounded-lg shadow-lg shadow-[#14213D] px-6 py-6 mb-24 w-[920px]">
 						{props.children}
 					</div>
 				</div>

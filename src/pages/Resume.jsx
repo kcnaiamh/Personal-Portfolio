@@ -8,7 +8,7 @@ const ResumePage = () => {
 			<div class="w-12 h-1 bg-[#FCA311] mb-5" />
 
 			<div className="flex-col items-center justify-center mb-20">
-				<section className="w-[850px]">
+				<section>
 					<div className="sticky -top-3 py-3 z-10">
 						<h1 className="group-date">Experience</h1>
 					</div>
@@ -43,7 +43,7 @@ const ResumePage = () => {
 					</div>
 				</section>
 
-				<section className="w-[850px]">
+				<section>
 					<div className="sticky -top-3 py-3 z-10">
 						<h1 className="group-date">Education</h1>
 					</div>

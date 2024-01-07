@@ -74,9 +74,9 @@ const Header = () => {
 								Email
 							</p>
 							<a
-								href="mailto:naimul9m@gmail.com"
+								href="mailto:naim@kcnaiamh.com"
 								className="text-white text-sm hover:text-[#FCA311]">
-								naimul9m@gmail.com
+								naim@kcnaiamh.com
 							</a>
 						</div>
 						<div>

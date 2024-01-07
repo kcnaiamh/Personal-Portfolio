@@ -8,11 +8,11 @@
     "description": "Cloud is a huge thing. It is really facinating to think about how the internal infrastructure works under-the-hood. I'm continuouly learning about it."
   },
   {
-    "name": "Digital Forensics",
-    "description": "I can talk about this all day. Most of my cybersecurity expertise is regarding on this. Understanding how computer operates on each layer from the hardware to user-level software is essential to be good at DF. This knowledge gave me totally different view on computers than most of the people I know."
-  },
-  {
     "name": "DevOps",
     "description": "I'm currently focusing on DevSecOps role. Learning Docker and Kubernetes in-depth. I believe, my transferable skill and unique background would make me a super SRE and a great asset."
+  },
+  {
+    "name": "Digital Forensics",
+    "description": "I can talk about this all day. Most of my cybersecurity expertise is regarding on this. Understanding how computer operates on each layer from the hardware to user-level software is essential to be good at DF. This knowledge gave me totally different view on computers than most of the people I know."
   }
 ]

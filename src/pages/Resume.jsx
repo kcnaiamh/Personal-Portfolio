@@ -14,13 +14,11 @@ const ResumePage = () => {
 					</div>
 
 					<div className="timeline">
-						<PrintJobs
-							title={"Assistant Cybersecurity Instructor"}
-							company={"Ostad"}
-							duration={"Aug 2023 - Present"}
-							description={
-								"I explain complex cybersecurity concepts simply so that students from different background can understand it. The quizzes, assignments, and live tests I develop ensure the students' practical and theoretical understanding."
-							}
+					<PrintJobs
+							title={"Engineer, Offensive Security Research"}
+							company={"bKash Limited"}
+							duration={"Mar 2023 - Present"}
+							description={""}
 							main={true}
 						/>
 
@@ -30,6 +28,16 @@ const ResumePage = () => {
 							duration={"Sep 2022 - Present"}
 							description={`Building a culture of cybersecurity around the campus through CTFs, Bug Bounty programs, Research, and Red/Blue team exercises with some amazing juniors and seniors. Guiding them with the resource and experience what we need when we were in their shoes.
 							As a pioneer member of this group, it's my dream to see students from our university, SUST, become future leaders in the exciting field of cyberspace.`}
+						/>
+
+						<PrintJobs
+							title={"Assistant Cybersecurity Instructor"}
+							company={"Ostad"}
+							duration={"Aug 2023 - Jan 2024"}
+							description={
+								"I explain complex cybersecurity concepts simply so that students from different background can understand it. The quizzes, assignments, and live tests I develop ensure the students' practical and theoretical understanding."
+							}
+							main={true}
 						/>
 
 						<PrintJobs
@@ -57,7 +65,7 @@ const ResumePage = () => {
 								<h3 className="timeline-title">
 									Shahjalal University of Science and Technology
 								</h3>
-								<span className="timeline-date">Jan 2019 - Jan 2024</span>
+								<span className="timeline-date">Jan 2019 - Feb 2024</span>
 								<div className="text-gray-200">
 									Computer Science & Engineering <br />
 									Sylhet, Bangladesh

@@ -1,0 +1,40 @@
+name: Deploy to cPanel
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "22.2.0"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the React app
+        run: npm run build
+
+      - name: Deploy to cPanel
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_KEY }}
+          SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
+          CPANEL_PASSWORD: ${{ secrets.CPANEL_PASSWORD }}
+        run: |
+          # Start the SSH agent and add the key
+          eval $(ssh-agent -s)
+          echo "$SSH_PRIVATE_KEY" > id_rsa
+          chmod 600 id_rsa
+          echo "$SSH_PASSPHRASE" | ssh-add id_rsa
+
+          # Use rsync to deploy files
+          rsync -avz -e "ssh -o StrictHostKeyChecking=no" dist/ hvvubifh@kcnaiamh.com:/home/hvvubifh/public_html/

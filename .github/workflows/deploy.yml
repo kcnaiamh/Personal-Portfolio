@@ -31,4 +31,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/ # The directory to upload
           server-dir: public_html/ # Change to your server's root directory
-          passive: true
+          port: 21
+          dry-run: true

@@ -1,5 +1,3 @@
-name: Deploy to cPanel
-
 on:
   push:
     branches:
@@ -11,43 +9,25 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: "22.2.0"
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build the React app
         run: npm run build
 
-      - name: Update apt-get
-        run: sudo apt-get update
 
-      - name: Install rsync
-        run: sudo apt-get install -y rsync
-
-      - name: Check rsync version
-        run: |
-          echo "Checking rsync version..."
-          which rsync
-          rsync --version
-
-      - name: Deploy to cPanel
-        if: success()
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.CPANEL_SSH_KEY }}
-          SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
-          CPANEL_PASSWORD: ${{ secrets.CPANEL_PASSWORD }}
-        run: |
-          # Start the SSH agent and add the key
-          eval $(ssh-agent -s)
-          echo "$SSH_PRIVATE_KEY" > id_rsa
-          chmod 600 id_rsa
-          echo "$SSH_PASSPHRASE" | ssh-add id_rsa
-
-          # Use rsync to deploy files
-          rsync -avz -e "ssh -o StrictHostKeyChecking=no" dist/ hvvubifh@kcnaiamh.com:/home/hvvubifh/public_html/
+    - name: Deploy via FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: dist  # The directory to upload
+        server-dir: public_html  # Change to your server's root directory

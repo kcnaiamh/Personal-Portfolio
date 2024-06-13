@@ -1,20 +1,20 @@
-name: Deploy to cPanel
+name: Deploy Website
 
 on:
   push:
     branches:
-      - master
+      - main # Change to your default branch
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v2
         with:
           node-version: "22.2.0"
 
@@ -24,12 +24,11 @@ jobs:
       - name: Build the React app
         run: npm run build
 
-
-    - name: Deploy via FTP
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: dist  # The directory to upload
-        server-dir: public_html  # Change to your server's root directory
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist # The directory to upload
+          server-dir: public_html # Change to your server's root directory

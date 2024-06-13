@@ -31,4 +31,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/ # The directory to upload
-          server-dir: public_html # Change to your server's root directory
+          server-dir: public_html/ # Change to your server's root directory

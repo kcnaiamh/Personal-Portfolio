@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: "22.2.0"
 
@@ -23,19 +23,23 @@ jobs:
           npm ci
           npm run build
 
-      - name: Set up SSH
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: |
-          mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+      - name: Setup SSH Key
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Copy files via SCP
+      - name: Deployment
         env:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USERNAME: ${{ secrets.REMOTE_USERNAME }}
         run: |
+          set -e
           zip -r dist.zip ./dist/
-          scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ./dist.zip $REMOTE_USERNAME@$REMOTE_HOST:public_html/
-          ssh -i ~/.ssh/id_rsa $REMOTE_USERNAME@$REMOTE_HOST 'cd ~/public_html && unzip dist.zip && mv dist/* .'
+          scp -o StrictHostKeyChecking=no ./dist.zip $REMOTE_USERNAME@$REMOTE_HOST:~/public_html/
+          ssh $REMOTE_USERNAME@$REMOTE_HOST << 'EOF'
+            cd ~/public_html
+            unzip -o dist.zip
+            mv dist/* .
+            rmdir dist
+            rm dist.zip
+          EOF

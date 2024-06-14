@@ -14,13 +14,6 @@ const ResumePage = () => {
 					</div>
 
 					<div className="timeline">
-					<PrintJobs
-							title={"Engineer, Offensive Security Research"}
-							company={"bKash Limited"}
-							duration={"Mar 2023 - Present"}
-							description={""}
-							main={true}
-						/>
 
 						<PrintJobs
 							title={"Founder & Security Researcher"}

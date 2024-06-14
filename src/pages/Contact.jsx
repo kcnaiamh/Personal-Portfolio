@@ -47,9 +47,9 @@ const ContactPage = () => {
 			<h1 className="capitalize font-bold text-2xl mb-5">Contact</h1>
 			<div class="w-12 h-1 bg-[#FCA311] mb-4" />
 
-			<p>
+			{/* <p>
 				Open for opportunities: <b className="text-green-500">Yes</b>
-			</p>
+			</p> */}
 
 			<form ref={form} onSubmit={sendEmail} className="mt-3 flex-col">
 				<div className="flex space-x-10">

@@ -36,7 +36,7 @@ jobs:
           set -e
           zip -r dist.zip ./dist/
           scp -o StrictHostKeyChecking=no ./dist.zip $REMOTE_USERNAME@$REMOTE_HOST
-          ssh $REMOTE_USERNAME@$REMOTE_HOST << 'EOF'
+          ssh -T $REMOTE_USERNAME@$REMOTE_HOST << 'EOF'
             rm -rf ~/public_html/{*,.*}
             unzip -o dist.zip
             mv dist/* .

@@ -38,4 +38,4 @@ jobs:
         run: |
           zip -r dist.zip ./dist/
           scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ./dist.zip $REMOTE_USERNAME@$REMOTE_HOST:public_html/
-          ssh -i ~/.ssh/id_rsa $REMOTE_USERNAME@$REMOTE_HOST:public_html/ 'unzip dist.zip'
+          ssh -i ~/.ssh/id_rsa $REMOTE_USERNAME@$REMOTE_HOST 'cd ~/public_html && unzip dist.zip'

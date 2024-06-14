@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: "22.2.0"
 
@@ -23,23 +23,19 @@ jobs:
           npm ci
           npm run build
 
-      - name: Setup SSH Key
-        uses: webfactory/ssh-agent@v0.5.3
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Setup Private Key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
 
       - name: Deployment
         env:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USERNAME: ${{ secrets.REMOTE_USERNAME }}
         run: |
-          set -e
           zip -r dist.zip ./dist/
-          scp -o StrictHostKeyChecking=no ./dist.zip $REMOTE_USERNAME@$REMOTE_HOST
-          ssh -T $REMOTE_USERNAME@$REMOTE_HOST << 'EOF'
-            rm -rf ~/public_html/{*,.*}
-            unzip -o dist.zip
-            mv dist/* .
-            rmdir dist
-            rm dist.zip
-          EOF
+          scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ./dist.zip $REMOTE_USERNAME@$REMOTE_HOST
+u         ssh -i ~/.ssh/id_rsa $REMOTE_USERNAME@$REMOTE_HOST 'rm -rf ~/public_html/{*,.*} && unzip dist.zip && mv dist/* public_html/ && rmdir dist && rm dist.zip'

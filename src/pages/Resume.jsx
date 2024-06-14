@@ -30,7 +30,6 @@ const ResumePage = () => {
 							description={
 								"I explain complex cybersecurity concepts simply so that students from different background can understand it. The quizzes, assignments, and live tests I develop ensure the students' practical and theoretical understanding."
 							}
-							main={true}
 						/>
 
 						<PrintJobs

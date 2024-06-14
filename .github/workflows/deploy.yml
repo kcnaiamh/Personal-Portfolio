@@ -3,10 +3,10 @@ name: Deploy Website
 on:
   push:
     branches:
-      - master # Change to your default branch
+      - master
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,16 +22,21 @@ jobs:
         run: |
           npm ci
           npm run build
-          ls -l
-          ls ./dist/
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/ # The directory to upload
-          server-dir: public_html/ # Change to your server's root directory
-          port: 21
-          dry-run: true
+      - name: Set up SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PASSPHRASE: ${{ secrets.SSH_PASSPHRASE }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          eval $(ssh-agent -s)
+          echo "$SSH_PASSPHRASE" | ssh-add ~/.ssh/id_rsa
+
+      - name: Copy files via SCP
+        env:
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USERNAME: ${{ secrets.REMOTE_USERNAME }}
+        run: |
+          scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa -r ./dist/ $REMOTE_USERNAME@$REMOTE_HOST:public_html/

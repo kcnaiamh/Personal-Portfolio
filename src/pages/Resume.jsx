@@ -14,6 +14,21 @@ const ResumePage = () => {
 					</div>
 
 					<div className="timeline">
+					<PrintJobs
+							title={"Engineer, Offensive Security Research"}
+							company={"bKash Limited"}
+							duration={"Mar 2023 - Present"}
+							description={""}
+							main={true}
+						/>
+
+						<PrintJobs
+							title={"Founder & Security Researcher"}
+							company={"ReSINC"}
+							duration={"Sep 2022 - Present"}
+							description={`Building a culture of cybersecurity around the campus through CTFs, Bug Bounty programs, Research, and Red/Blue team exercises with some amazing juniors and seniors. Guiding them with the resource and experience what we need when we were in their shoes.
+							As a pioneer member of this group, it's my dream to see students from our university, SUST, become future leaders in the exciting field of cyberspace.`}
+						/>
 
 						<PrintJobs
 							title={"Assistant Cybersecurity Instructor"}

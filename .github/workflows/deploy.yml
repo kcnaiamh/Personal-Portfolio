@@ -39,7 +39,7 @@ jobs:
           zip -r dist.zip ./dist/
 
           # Remove existing files on remote server
-          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $REMOTE_USERNAME@$REMOTE_HOST 'rm -rf ~/public_html/{*,.*} || true'
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $REMOTE_USERNAME@$REMOTE_HOST 'rm -rf ~/public_html/* || true'
 
           # Upload new files
           scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa dist.zip $REMOTE_USERNAME@$REMOTE_HOST:~/public_html/

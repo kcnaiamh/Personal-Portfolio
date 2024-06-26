@@ -20,21 +20,35 @@ const AboutPage = () => {
 			<div className="space-y-4">
 				Welcome to my corner of the internet! I’m thrilled to have you here.
 				<br />
+				<br />
+
+
 				So, who am I? I'm Naim. A Computer Science & Engineering undergraduate
 				student at SUST.
 				<br />
+				<br />
+
+
 				You have seen Matrix movie, right? In that movie, Neo could control the
 				simulation as his will. Similarly, the control over tech drives me. I
 				want to know everything in every layer so well that I can control and
 				manipulate any digital system.
 				<br />
+				<br />
+
+
 				Some people call it hacking, some call it magic. For me, its just
 				understanding the underline logic. Its the technical debt of the
 				developers that give us the power of doing magic.
 				<br />
+				<br />
+
+
 				I’m always excited to connect with like-minded individuals and engage in
 				meaningful conversations. Feel free to reach me out.
 				<br />
+				<br />
+
 				Thank you for visiting my website, and I look forward to embarking on
 				this digital journey with you. Together, let’s explore, learn, and
 				create!

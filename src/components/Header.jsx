@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithub, FaUserSecret } from "react-icons/fa6";
-import { IoLogoYoutube } from "react-icons/io5";
+import { IoLogoLinkedin, IoLogoYoutube } from "react-icons/io5";
 
 const Header = () => {
 	const [days, setDays] = useState(0);
@@ -9,7 +8,7 @@ const Header = () => {
 	const [minutes, setMinutes] = useState(0);
 	const [seconds, setSeconds] = useState(0);
 
-	const targetDate = "January, 1, 2025"; // input should be less than a year
+	const targetDate = "January, 1, 2026"; // input should be less than a year
 
 	const getTime = () => {
 		let time = Date.parse(targetDate) - Date.now();
